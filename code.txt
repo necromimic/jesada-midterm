@@ -64,33 +64,3 @@ class Patient(models.Model):
     def __str__(self):
         """Unicode representation of Patient."""
         return self.pfirst_name + " " + self.plast_name 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
