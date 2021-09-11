@@ -4,8 +4,11 @@ from django.shortcuts import render, HttpResponse
 def index(request):
     return render(request, 'index.html')
 
-def about(request):
-    return HttpResponse('เกี่ยวกับ')
+def patient(request):
+    return render(request, 'patient.html')
 
-def contact(request):
-    return HttpResponse('ติดต่อ')
+def medic(request):
+    return render(request, 'medic.html')
+
+def hospital(request):
+    return render(request, 'hospital.html')
