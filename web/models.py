@@ -52,8 +52,8 @@ class Patient(models.Model):
     plast_name = models.CharField(("นามสกุล"),max_length=255)
     gender = models.IntegerField(("เพศ"),choices=GENDER_CHOICES)
     age = models.CharField(("อายุ"), max_length=3, default='')
-    medic = models.OneToOneField(Medic, on_delete=models.DO_NOTHING, default='')
-    hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE, default=None)
+    medic = models.OneToOneField(Medic, on_delete=models.DO_NOTHING, default='', null=True)
+    hospital = models.ForeignKey(Hospital, on_delete=models.CASCADE, default=None, null=True)
 
     class Meta:
         """Meta definition for Patient."""
