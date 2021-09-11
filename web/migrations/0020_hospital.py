@@ -14,7 +14,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Hospital',
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID', null=True)),
                 ('hosname', models.CharField(max_length=50, verbose_name='ชื่อโรงพยาบาล')),
                 ('patient', models.ForeignKey(on_delete=django.db.models.deletion.DO_NOTHING, to='web.patient')),
             ],
