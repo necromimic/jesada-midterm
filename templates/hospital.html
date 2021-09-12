@@ -3,3 +3,30 @@
 {% block title %}
                   รายชื่อโรงพยาบาล
 {% endblock title %}
+
+{% block hospital %}
+<h2>Section title</h2>
+<div class="row">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ชื่อโรงพยาบาล</th>
+            <th scope="col">แพทย์ที่สังกัด</th>
+            <th scope="col">ผู้ป่วย</th>
+            <th scope="col">#</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          {% for hospital in hospitals %}
+          <tr>
+            <td>#</td>
+            <td>{{hospital.hosname}}</td>
+          </tr>
+          {% endfor %}
+            
+        </tbody>
+      </table>
+</div>
+{% endblock hospital %}
