@@ -42,7 +42,7 @@ class Medic(models.Model):
 
     def __str__(self):
         """Unicode representation of Medic."""
-        return self.mfirst_name + " " + self.mlast_name + " " + self.expertise + " " + self.affiliation
+        return self.mfirst_name + " " + self.mlast_name + " " + self.expertise 
 
 class Patient(models.Model):
     """Model definition for Patient."""
